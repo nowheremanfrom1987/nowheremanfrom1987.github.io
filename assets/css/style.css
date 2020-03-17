@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6{margin: 0;}
            width: 100%;
            max-width: 1230px;
            margin: 0 auto;
-           padding: 0 15px;
+           padding: 50px 15px;
           }
 /* стилизация заглавной страницы "intro" */
 .intro{ 
