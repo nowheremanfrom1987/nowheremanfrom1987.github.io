@@ -972,6 +972,8 @@ div.services_item:last-child{
 }
 
 @media (max-width: 320px){
+     .col1,
+     .col2,
      .cont3,
      .client{display: none;}
      
