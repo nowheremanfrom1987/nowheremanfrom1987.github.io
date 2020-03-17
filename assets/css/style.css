@@ -316,7 +316,6 @@ div.services_item:last-child{
        flex-direction: column;
        justify-content: center;
        width: 100%;
-       height: 100vh;
        background: url("/images/teams.jpg") center no-repeat;
        background-size: cover;
        padding: 70px 0;
@@ -401,9 +400,9 @@ div.services_item:last-child{
        flex-direction: column;
        justify-content: center;
        width: 100%;
-       height: 100vh;
        background-color: #fff;
-       background-size: cover;   
+       background-size: cover;
+       padding: 15px;  
       }
 .name_works{
             width: 100%;
@@ -431,7 +430,6 @@ div.services_item:last-child{
 .link1:hover{color:#00e0d0;}
 .projects{   
           width: 100%;
-          height: 50vh;
           background-size: cover;
           margin: 70px 0;
         }
@@ -466,7 +464,6 @@ div.services_item:last-child{
               flex-direction: column;
               justify-content: center;
               width: 100%;
-              height: 100vh;
               background: url("/images/testimonials.jpg") center no-repeat;
               background-size: cover;
               padding: 70px 0;
@@ -513,10 +510,10 @@ div.services_item:last-child{
              }
 .client{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex: 1 1;
         width: 100%;
-        max-width: 200px;
+        max-width: 360px;
         height: 100vh;
        }
 #our_client{
@@ -528,16 +525,18 @@ div.services_item:last-child{
             text-align: left;
            }
 .col1{
+        flex-grow: 1;
         position: relative;
         width: 100%;
         max-width: 200px;;
-        height: 100vh;
+        
        }
 .col2{
+      flex-grow: 1;
       position: relative;
       width: 100%;
       max-width: 200px;;
-      height: 100vh;
+      
      }
 .logo1{
         top: 30px;
@@ -717,7 +716,7 @@ div.services_item:last-child{
          flex-direction: column;
          justify-content: center;
          width: 100%;
-         height:  60vh;
+         padding-top: 40px;
          background: url("/images/footer.jpg") center no-repeat;
          background-size: cover;
         }
@@ -890,15 +889,13 @@ div.services_item:last-child{
       opacity: 0.7;
      }
 
-@media (max-width: 1230px){
+@media (max-width: 1230px){}
 
-
-}
-
-@media (max-width: 990px){
-
-
-}
+@media (max-width: 990px){}
+#work_1{
+        display: block;
+        order: solid red 1px;
+       }
 @media (max-width: 770px){
  .nav{display: none;}
  .img_logo{display: none;}
@@ -908,17 +905,74 @@ div.services_item:last-child{
            text-align: center;
           }
   .story{padding-top: 10px;}
+
   .services_item,
   .services_icon{position: static;
                  border: none; 
                  margin: 0 auto;
                  text-align: center;
   }
+
   .servises_title{padding-top: 20px;}
+
   .contact{display: block;}
+  
+  .conteiner1{display: flex;
+    flex-direction: column;
+}
+
 }
 @media (max-width: 575px){
   .services{display: block;}
+  .row1{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cont1,
+  .cont2,
+  .cont3 {flex-grow: 1;
+  margin: 0 auto;
+  text-align: center;
+  }
 
-
+  .copyright{
+            margin: 0 0 73px 0;
+             text-align: center;           
+  }
+  .footer_nav{
+    margin: 0px; 
+    text-align: center;
+   }
+.nav{font-size: 12px;}
+.footer{padding-top: 20px;}
+.categories{display: flex;
+            flex-direction: column;
 }
+.subcat{flex-grow: 1;
+  margin: 0 auto;
+  text-align: center;}
+.teams{padding: 10px 0;}
+.title_teams{font-size: 14px;}
+.text_teams{font-size: 10px;}
+.sup_btn{margin: 5px 0 30px 0;}
+.contact{flex-direction: column;}
+.client{height: 60vh;
+        margin: 0 auto;
+        text-align: center;
+       }
+.contact_form{
+              margin: 0 auto;
+              text-align: center;
+             }
+.slider-container{
+                  max-width: 90px;
+                 }
+.switchers{display: none;}
+}
+
+@media (max-width: 320px){
+     .cont3,
+     .client{display: none;}
+     
+                         }
