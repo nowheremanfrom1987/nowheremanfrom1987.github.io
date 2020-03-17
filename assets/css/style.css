@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6{margin: 0;}
         z-index: 1000;
        }
 /* стилизация "header_inner" */
-.header_inner{
+.header_inner{margin-bottom:5px;
               display: flex;
               justify-content: space-between;
               align-items: center;
